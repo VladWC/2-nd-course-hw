@@ -9,7 +9,8 @@
 .header{
     background-color: #E1FF8F;
     background-image: url(./img/bgheader.svg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     &__box{
         max-width: 768px;
         max-height: 358px;

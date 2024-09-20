@@ -11,7 +11,8 @@
 .header {
   background-color: #E1FF8F;
   background-image: url(./img/bgheader.svg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header__box {
   max-width: 768px;
@@ -196,5 +197,11 @@
     margin-left: 29px;
     margin-bottom: 35px;
     margin-right: 29px;
+  }
+  .order1 {
+    order: 2;
+  }
+  .order2 {
+    order: 1;
   }
 }/*# sourceMappingURL=style.css.map */
