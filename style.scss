@@ -87,6 +87,30 @@
     }
    }
 }
+.minigame__heading{
+    padding-bottom: 72px;
+    padding-top: 96px;
+     color: white;
+     font-size: 64px; 
+}
+.conteiner__minigame{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+    &-box{
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-img{
+        max-width: 600px;
+        max-height: 500px;
+    }
+}
 .game{
     border: 1px solid #F7F7F7;
     background-color: #F7F7F7;
