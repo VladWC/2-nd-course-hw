@@ -49,18 +49,58 @@
    
 }
 .main{
+    padding-top: 94px;
+    padding-bottom: 144px;
    background-color: #202027;
    &__heading{
+    padding-bottom: 24px;
      color: white;
      font-size: 64px;
    }
    &__textdescription{
+    padding-bottom: 72px;
      max-width: 788px;
      color: white;
      font-size: 24px;
      line-height: 32px;
    }
+   &__conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    &-item{
+        max-width: 378px;
+        height: 473px;
+        background-color: white;
+        border-radius: 30px;
+        &:hover{
+            height: 518px;
+            transition: 0.5s;
+        }
+    }
+    &-box{
+        padding: 32px 32px 36px 32px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 16px;
+    }
+   }
 }
+.game{
+    border: 1px solid #F7F7F7;
+    background-color: #F7F7F7;
+    border-radius: 52px;
+    width: 76px;
+    height: 18px;
+    line-height: 17.5px;
+    font-size: 16px;
+    color: #202027;
+    &-name{
+        font-size: 32px;
+        color: #202027;
+    }
+   }
 .footer{
     height: 150px;
     background-color: #BDED35;
