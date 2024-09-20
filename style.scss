@@ -8,6 +8,8 @@
 }
 .header{
     background-color: #E1FF8F;
+    background-image: url(./img/bgheader.svg);
+    background-size: 100%;
     &__box{
         max-width: 768px;
         max-height: 358px;
@@ -120,10 +122,6 @@
         line-height: 32px;
         color: #202027;
     }
-    &-img{
-        max-width: 600px;
-        max-height: 500px;
-    }
 }
 .game{
     border: 1px solid #F7F7F7;
@@ -140,7 +138,7 @@
         font-weight: bold;
     }
    }
-   .minigame-name{
+.minigame-name{
     font-size: 48px;
     line-height: 58px;
     font-weight: bold;

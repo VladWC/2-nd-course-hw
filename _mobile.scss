@@ -13,9 +13,23 @@
     }
     &-textdescription{
         font-size: 16px;
-        line-height: 19.5px;
-        
+        line-height: 19.5px; 
     }
    }
-
+   .main{
+    padding-top: 0px;
+   }
+   .mobile{
+    display: none;
+     &__img{
+        width: 100%;
+     }
+   }
+   .conteiner__minigame-boxtext{
+    text-align: center;
+    margin-top: 29px;
+    margin-left: 29px;
+    margin-bottom: 35px;
+    margin-right: 29px;
+   }
 }

@@ -10,6 +10,8 @@
 
 .header {
   background-color: #E1FF8F;
+  background-image: url(./img/bgheader.svg);
+  background-size: 100%;
 }
 .header__box {
   max-width: 768px;
@@ -126,10 +128,6 @@
   line-height: 32px;
   color: #202027;
 }
-.conteiner__minigame-img {
-  max-width: 600px;
-  max-height: 500px;
-}
 
 .game {
   border: 1px solid #F7F7F7;
@@ -182,5 +180,21 @@
   .header__box-textdescription {
     font-size: 16px;
     line-height: 19.5px;
+  }
+  .main {
+    padding-top: 0px;
+  }
+  .mobile {
+    display: none;
+  }
+  .mobile__img {
+    width: 100%;
+  }
+  .conteiner__minigame-boxtext {
+    text-align: center;
+    margin-top: 29px;
+    margin-left: 29px;
+    margin-bottom: 35px;
+    margin-right: 29px;
   }
 }/*# sourceMappingURL=style.css.map */
