@@ -1,0 +1,21 @@
+@media (max-width: 425px){
+   .center{
+    padding-left: 16px;
+    padding-right: 16px;
+   }
+   .header__box{
+    text-align: center;
+    padding-top: 147px;
+    &-heading{
+        font-size: 52px;
+        line-height: 49px;
+        font-weight: bold;
+    }
+    &-textdescription{
+        font-size: 16px;
+        line-height: 19.5px;
+        
+    }
+   }
+
+}
