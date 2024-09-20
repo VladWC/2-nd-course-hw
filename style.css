@@ -22,11 +22,13 @@
   font-size: 64px;
   line-height: 78px;
   color: #202027;
+  font-weight: bold;
 }
 .header__box-textdescription {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 48px;
+  font-weight: normal;
 }
 .header__box-textdescriptionstyle {
   font-weight: bold;
@@ -41,7 +43,7 @@
 .header__box-button:hover {
   background-color: white;
   color: #202027;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .header__box-buttontext {
   padding: 16px 65px;
@@ -58,6 +60,7 @@
   padding-bottom: 24px;
   color: white;
   font-size: 64px;
+  font-weight: bold;
 }
 .main__textdescription {
   padding-bottom: 72px;
@@ -79,7 +82,7 @@
 }
 .main__conteiner-item:hover {
   height: 518px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .main__conteiner-box {
   padding: 32px 32px 36px 32px;
@@ -110,6 +113,19 @@
   justify-content: space-between;
   align-items: center;
 }
+.conteiner__minigame-boxtext {
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-bottom: 85px;
+  margin-right: 48px;
+}
+.conteiner__minigame-textdescription {
+  padding-top: 24px;
+  padding-bottom: 36px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #202027;
+}
 .conteiner__minigame-img {
   max-width: 600px;
   max-height: 500px;
@@ -127,6 +143,14 @@
 }
 .game-name {
   font-size: 32px;
+  color: #202027;
+  font-weight: bold;
+}
+
+.minigame-name {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
   color: #202027;
 }
 
