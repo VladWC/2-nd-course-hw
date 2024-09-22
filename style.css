@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -12,7 +16,7 @@
   background-color: #E1FF8F;
   background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/starhead2.svg);
   background-repeat: no-repeat;
-  background-position: 5% 21%, 160% 90%, 73% 90%;
+  background-position: 5% 21%, calc(100% + 379px) 90%, 73% 90%;
 }
 .header__box {
   max-width: 768px;
@@ -174,9 +178,9 @@
     padding-right: 16px;
   }
   .header {
-    background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/star2mobil.svg);
+    background-image: url(./img/stars\ head.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
     background-repeat: no-repeat;
-    background-position: 5% 21%, 160% 90%, 93% 97%;
+    background-position: 5% 21%, 171% -20%, 93% 97%;
   }
   .header__box {
     text-align: center;
