@@ -4,15 +4,15 @@
 }
 
 .center {
-  padding-left: 119Px;
-  padding-right: 119px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
   background-color: #E1FF8F;
-  background-image: url(./img/bgheader.svg);
+  background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/starhead2.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 5% 21%, 160% 90%, 73% 90%;
 }
 .header__box {
   max-width: 768px;
@@ -58,6 +58,9 @@
   padding-top: 94px;
   padding-bottom: 144px;
   background-color: #202027;
+  background-image: url(./img/Star\ 1.svg), url(./img/star\ footer.svg), url(./img/star\ midl.svg), url(./img/star\ midl.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 82px, 97% 99%, 3% 16%, 96% 31%;
 }
 .main__heading {
   padding-bottom: 24px;
@@ -117,6 +120,7 @@
   align-items: center;
 }
 .conteiner__minigame-boxtext {
+  max-width: 504px;
   margin-top: 48px;
   margin-left: 48px;
   margin-bottom: 85px;
@@ -169,6 +173,11 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .header {
+    background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/star2mobil.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 21%, 160% 90%, 93% 97%;
+  }
   .header__box {
     text-align: center;
     padding-top: 147px;
@@ -183,6 +192,7 @@
     line-height: 19.5px;
   }
   .main {
+    background-image: none;
     padding-top: 0px;
   }
   .mobile {

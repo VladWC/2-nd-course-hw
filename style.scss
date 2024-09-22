@@ -3,14 +3,14 @@
     padding: 0;
 }
 .center{
-    padding-left: 119Px;
-    padding-right: 119px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 .header{
     background-color: #E1FF8F;
-    background-image: url(./img/bgheader.svg);
+    background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/starhead2.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 5% 21%, calc(100% + 60%) 90%, 73% 90%;
     &__box{
         max-width: 768px;
         max-height: 358px;
@@ -54,7 +54,10 @@
 .main{
     padding-top: 94px;
     padding-bottom: 144px;
-   background-color: #202027;
+    background-color: #202027;
+    background-image: url(./img/Star\ 1.svg), url(./img/star\ footer.svg), url(./img/star\ midl.svg), url(./img/star\ midl.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 82px, 97% 99%, 3% 16%, 96% 31%;
    &__heading{
     padding-bottom: 24px;
      color: white;
@@ -111,6 +114,7 @@
         align-items: center;
     }
     &-boxtext{
+        max-width: 504px;
         margin-top: 48px;
         margin-left: 48px;
         margin-bottom: 85px;
