@@ -13,7 +13,7 @@ body {
     background-color: #E1FF8F;
     background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/starhead2.svg);
     background-repeat: no-repeat;
-    background-position: 5% 21%, calc(100% + 379px) 90%, 73% 90%;
+    background-position: 5% 21%, calc(100% + 503px) 90%, 73% 90%;
     &__box{
         max-width: 768px;
         max-height: 358px;
@@ -24,7 +24,7 @@ body {
             font-size: 64px;
             line-height: 78px;
             color: #202027;
-            font-weight: bold;
+            font-weight: 700;
         }
         &-textdescription{
             font-size: 24px;
@@ -48,6 +48,7 @@ body {
             }
         }
         &-buttontext{
+            font-family: "Montserrat", sans-serif;
             padding: 16px 65px;
             font-size: 24px;
             color: white;
@@ -80,7 +81,7 @@ body {
     gap: 32px;
     &-item{
         max-width: 378px;
-        height: 473px;
+        height: 551px;
         background-color: white;
         border-radius: 30px;
         &:hover{
@@ -135,12 +136,13 @@ body {
     border: 1px solid #F7F7F7;
     background-color: #F7F7F7;
     border-radius: 52px;
-    width: 76px;
+    width: 82px;
     height: 18px;
     line-height: 17.5px;
     font-size: 16px;
     color: #202027;
     &-name{
+        padding-bottom: 36px;
         font-size: 32px;
         color: #202027;
         font-weight: bold;
