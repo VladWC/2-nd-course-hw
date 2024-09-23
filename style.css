@@ -87,7 +87,7 @@ body {
 }
 .main__conteiner-item {
   max-width: 378px;
-  height: 551px;
+  height: 505px;
   background-color: white;
   border-radius: 30px;
 }
@@ -176,13 +176,13 @@ body {
 
 @media (max-width: 425px) {
   .center {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
   }
   .header {
     background-image: url(./img/stars\ head.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
     background-repeat: no-repeat;
-    background-position: 5% 21%, 171% -20%, 93% 97%;
+    background-position: 5% 14%, 171% -20%, 93% 97%;
   }
   .header__box {
     text-align: center;
@@ -210,9 +210,9 @@ body {
   .conteiner__minigame-boxtext {
     text-align: center;
     margin-top: 29px;
-    margin-left: 29px;
+    margin-left: 5px;
     margin-bottom: 35px;
-    margin-right: 29px;
+    margin-right: 5px;
   }
   .order1 {
     order: 2;
