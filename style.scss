@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: "Montserrat", sans-serif;
+  }
 .center{
-    padding-left: 119Px;
-    padding-right: 119px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 .header{
     background-color: #E1FF8F;
-    background-image: url(./img/bgheader.svg);
+    background-image: url(./img/stars\ head.svg), url(./img/starbig.svg), url(./img/starhead2.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 5% 21%, calc(100% + 503px) 90%, 73% 90%;
     &__box{
         max-width: 768px;
         max-height: 358px;
@@ -21,7 +24,7 @@
             font-size: 64px;
             line-height: 78px;
             color: #202027;
-            font-weight: bold;
+            font-weight: 700;
         }
         &-textdescription{
             font-size: 24px;
@@ -45,6 +48,7 @@
             }
         }
         &-buttontext{
+            font-family: "Montserrat", sans-serif;
             padding: 16px 65px;
             font-size: 24px;
             color: white;
@@ -54,7 +58,10 @@
 .main{
     padding-top: 94px;
     padding-bottom: 144px;
-   background-color: #202027;
+    background-color: #202027;
+    background-image: url(./img/Star\ 1.svg), url(./img/star\ footer.svg), url(./img/star\ midl.svg), url(./img/star\ midl.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 82px, 97% 99%, 3% 16%, 96% 31%;
    &__heading{
     padding-bottom: 24px;
      color: white;
@@ -62,7 +69,7 @@
      font-weight: bold;
    }
    &__textdescription{
-    padding-bottom: 72px;
+     padding-bottom: 72px;
      max-width: 788px;
      color: white;
      font-size: 24px;
@@ -74,7 +81,7 @@
     gap: 32px;
     &-item{
         max-width: 378px;
-        height: 473px;
+        height: 505px;
         background-color: white;
         border-radius: 30px;
         &:hover{
@@ -111,6 +118,7 @@
         align-items: center;
     }
     &-boxtext{
+        max-width: 504px;
         margin-top: 48px;
         margin-left: 48px;
         margin-bottom: 85px;
@@ -128,12 +136,13 @@
     border: 1px solid #F7F7F7;
     background-color: #F7F7F7;
     border-radius: 52px;
-    width: 76px;
-    height: 18px;
+    padding: 8px 16px 10px 16px;
+    width: 82px;
     line-height: 17.5px;
     font-size: 16px;
     color: #202027;
     &-name{
+        padding-bottom: 36px;
         font-size: 32px;
         color: #202027;
         font-weight: bold;
