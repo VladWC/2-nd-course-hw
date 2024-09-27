@@ -12,9 +12,12 @@
     text-align: center;
     padding-top: 147px;
     &-heading{
-        font-size: 52px;
+        font-size: 40px;
         line-height: 49px;
         font-weight: bold;
+        width: 262px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
     &-textdescription{
         font-size: 16px;
@@ -31,12 +34,28 @@
         width: 100%;
      }
    }
-   .conteiner__minigame-boxtext{
-    text-align: center;
-    margin-top: 29px;
-    margin-left: 5px;
-    margin-bottom: 35px;
-    margin-right: 5px;
+   .minigame__heading{
+    padding-bottom: 48px;
+    padding-top: 48px;
+    font-size: 40px; 
+}
+   .conteiner__minigame{
+       &-boxtext{
+            text-align: left;
+            margin-top: 29px;
+            margin-left: 29px;
+            margin-bottom: 35px;
+            margin-right: 29px;
+    }
+       &-textdescription{
+        font-size: 16px;
+        line-height: 20px;
+    }
+   }
+   .minigame-name{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
    }
    .order1{
     order: 2;

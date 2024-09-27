@@ -189,9 +189,12 @@ body {
     padding-top: 147px;
   }
   .header__box-heading {
-    font-size: 52px;
+    font-size: 40px;
     line-height: 49px;
     font-weight: bold;
+    width: 262px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .header__box-textdescription {
     font-size: 16px;
@@ -207,12 +210,26 @@ body {
   .mobile__img {
     width: 100%;
   }
+  .minigame__heading {
+    padding-bottom: 48px;
+    padding-top: 48px;
+    font-size: 40px;
+  }
   .conteiner__minigame-boxtext {
-    text-align: center;
+    text-align: left;
     margin-top: 29px;
-    margin-left: 5px;
+    margin-left: 29px;
     margin-bottom: 35px;
-    margin-right: 5px;
+    margin-right: 29px;
+  }
+  .conteiner__minigame-textdescription {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .minigame-name {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
   }
   .order1 {
     order: 2;
