@@ -1,3 +1,4 @@
+// hw-02
 // Задание 1
 let a=10;
 alert (a);
@@ -52,6 +53,22 @@ alert (result3);
 let result4=result3-number;
 alert (result4);
 alert (`Результат равен 5!`);
-
-
-  
+// hw-03
+// Задание 1
+let password = 'пароль';
+let answer = String(prompt('Введите пароль'));
+answer = answer.toLocaleLowerCase();
+alert(password === answer? 'Пароль введен верно' : 'Пароль введен неправильно');
+// Задание 2
+let c =Number(prompt('Запишите в любое число'));
+console.log(c>0 && c<10 ? 'Верно': 'Неверно' );
+// Задание 3
+let d =Number(prompt('Введите число D'));
+let e =Number(prompt('Введите число e'));
+console.log(d>100 || e<100 ? 'Верно': 'Неверно' );
+// Задание 4
+let a = '2';
+let b = '3';
+parseInt(a &&b);
+alert(a + b);
+// Задание 5
