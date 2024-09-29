@@ -69,6 +69,23 @@ console.log(d>100 || e<100 ? 'Верно': 'Неверно' );
 // Задание 4
 let a = '2';
 let b = '3';
-parseInt(a &&b);
+parseInt(a && b);
 alert(a + b);
 // Задание 5
+let mounth = prompt("Введите месяц года");
+switch (mounth) {
+   case '1' && '2' && '12' && 'январь' && 'февраль' && 'декабрь':
+      console.log('Зима');
+      break;
+   case '3' && '4' && '5' && 'март' && 'апрель' && 'май':
+      console.log('Весна');
+      break;
+   case '6' && '7' && '8' && 'июнь' && 'июль' && 'август':
+      console.log('Лето');
+      break;
+   case '9' && '10' && '11' && 'сентябрь' && 'октябрь' && 'ноябрь':
+      console.log('Осень');
+      break;
+   default:
+      console.log('ввели что-то не то');
+}
