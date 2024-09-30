@@ -42,7 +42,7 @@ const user = {
 // Задание 10
 let name=prompt('Представтесь, пожалуйста!');
 alert (`Привет, ${name}!`);
-// Задание доп
+// Задание доп hw-2
 let number=Number(prompt('Загадайте любое число!'));
 let result1=number*2;
 alert (result1);
@@ -89,3 +89,6 @@ switch (mounth) {
    default:
       console.log('ввели что-то не то');
 }
+// Задание 1 доп hw-3 
+
+
