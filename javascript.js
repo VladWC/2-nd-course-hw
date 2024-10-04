@@ -117,7 +117,7 @@ const obj = {
    "Петя" : '400'
 }
 for(const key in obj){
-   console.log{`${key}-${obj[key]}`};
+   console.log(key, obj[key]);
 }
 // Задание 5
 let n=1000
@@ -142,19 +142,32 @@ while(k>0){
    console.log(k, iterations)
 }
 // Задание 2 доп hw-2.4
-const months = {
-   January:1,
-   February:2,
-   March:3,
-   April:4,
-   May:5,
-   June:6,
-   July:7,
-   August:8,
-   September:9,
-   October:10,
-   November:11,
-   December:12
-}
-console.log(months)
+let months = [ 
+   'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+]
+console.log(months);
+for(i=1; i<13; i++){
+   console.log(months);
+} 
+ 
 // Задание 3 доп hw-2.4
+let book = {
+   "название": 'Привет луна',
+   "автор": 'Шишилин А. В.',
+   "год издания" : '2003',
+   "жанр": 'фэнтези'
+}
+for(const key in book){
+   console.log(key, book[key]);
+}
+// Задание 4 доп hw-2.4
+const numbers = [
+   12, 23, 34, 45, 65, 11, 24, 54, 32, 18
+]
+let minimum = numbers[0];
+for (const item of numbers) {
+  if(item < minimum) {
+    minimum = item;
+  }
+}
+console.log(minimum);
