@@ -145,11 +145,11 @@ while(k>0){
 let months = [ 
    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
 ]
-console.log(months);
-for(i=1; i<13; i++){
-   console.log(months);
-} 
- 
+let obj = {};
+for ( let i = 0; i <= 12; i++ ) {
+  obj[i+1] = months[i];
+}
+console.log(obj);
 // Задание 3 доп hw-2.4
 let book = {
    "название": 'Привет луна',
