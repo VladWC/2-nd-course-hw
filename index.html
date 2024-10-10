@@ -77,7 +77,28 @@
                         <div class="conteiner__minigame-boxtext order1">
                             <h3 class="minigame-name">Угадай число</h3>
                             <p class="conteiner__minigame-textdescription">Попробуй угадать случайное число от 1 до 100.</p>
-                            <form action="#"><button class="header__box-button header__box-buttontext">Играть!</button></form>
+                            <button onclick="// Game:«Угадай число»
+                            function getRandomIntInclusive(min, max) {
+                                min = Math.ceil(min);
+                                max = Math.floor(max);
+                                return Math.floor(Math.random() * (max - min + 1) + min);
+                            }
+                            
+                            let numb = getRandomIntInclusive(0, 100);
+                            while (i = numb) {
+                                let userAnswer = prompt('Попробуй угадать число!');
+                                if (i == userAnswer && i == numb) {
+                                    alert('Ура, угадал!!!');
+                                    break;
+                                }
+                                if (i > userAnswer) {
+                                    alert('Загаданое число больше!');
+                                }
+                                if (i < userAnswer) {
+                                    alert('Загаданное число меньше');
+                                }
+                            
+                            }" class="header__box-button header__box-buttontext">Играть!</button>
                         </div>
                         <img class="mobile__img order2" src="./img/big угадай число.svg" alt="img угадай число">
                     </div>
@@ -86,7 +107,7 @@
                          <div class="conteiner__minigame-boxtext order1">
                             <h3 class="minigame-name">Простая арифметика</h3>
                             <p class="conteiner__minigame-textdescription">Попробуй решить простые арифметические задачи.</p>
-                            <form action="#"><button class="header__box-button header__box-buttontext">Играть!</button></form>
+                            <button class="header__box-button header__box-buttontext">Играть!</button>
                         </div>
                     </div>
                     <div class="conteiner__minigame-box">
@@ -127,6 +148,6 @@
     <footer class="footer center">
         <p class="footer__text">Все права защищены.</p>
     </footer>
-    <script src="./javascript.js"></script>
+    <script src="./javascript.js" src="./gamejs.js"></script>
 </body>
 </html>
