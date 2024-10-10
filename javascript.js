@@ -225,7 +225,8 @@
 function min(a, b) {
 	if (a < b) {
 		return a;
-} else {
+} 
+    else {
 	return b;
 	}
 }
@@ -233,3 +234,88 @@ console.log(min(8, 4));
 console.log(min(6, 6));
 
 // Задание 2
+ 
+function numbEven(numb) {
+	if(numb%2===0){
+		console.log("Число четное");
+}
+    else{
+		console.log("Число нечетное");
+	}
+}
+
+console.log(numbEven(7));
+
+// Задание 3
+
+function numbSquare(numb) {
+	return(numb**=2)
+}
+
+function numbSquare(numb) {
+	let newNumb=(numb**=2);
+	return(`Получили ${newNumb}`);
+}
+console.log(numbSquare(7));
+
+// Задание 4
+
+function ageFunc(age) {
+	if(age<=0){
+		return('Вы ввели неправильное значение');
+	}
+	else if(age>0 || age<13) {
+		return('Привет, друг!');
+	}
+	else if(age>13) {
+		return('Добро пожаловать!');
+	}
+}
+console.log(ageFunc(age=prompt("Сколько Вам лет?")));
+
+// Задание 5
+
+function numbers(c, d){
+    if(isNaN(c, d)) {
+		return('Одно или оба значения не являются числом');
+	}
+	else {
+		return(c+d)
+	}
+}
+console.log(numbers(5, 6));
+
+// Задание 6
+
+function cube(n) {
+	if(isNaN(n)){
+		return('Переданный параметр не является числом');
+	}
+	else {
+		return(`${n} в кубе равняется ${n**=4}`);
+	}
+}
+console.log(cube(4));
+
+// Задание 7
+
+function getArea(){
+	console.log(`3.14*(${this.radius}**=2)`);
+}
+
+function getPerimeter(){
+	console.log(`2*3.14*${this.radius}`);
+}
+
+const circle1={
+	radius: 4,
+}
+const circle2={
+	radius: 8,
+}
+
+circle1.getArea();
+circle1.getPerimeter();
+
+circle2.getArea();
+circle2.getPerimeter();
