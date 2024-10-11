@@ -304,14 +304,19 @@ function getArea(){
 }
 
 function getPerimeter(){
+	
 	console.log(`2*3.14*${this.radius}`);
 }
 
 const circle1={
 	radius: 4,
+	getArea: getArea,
+	getPerimeter: getPerimeter,
 }
 const circle2={
 	radius: 8,
+	getArea: getArea,
+	getPerimeter: getPerimeter,
 }
 
 circle1.getArea();
