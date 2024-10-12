@@ -237,10 +237,10 @@ console.log(min(6, 6));
  
 function numbEven(numb) {
 	if(numb%2===0){
-		console.log("Число четное");
+		return("Число четное");
 }
     else{
-		console.log("Число нечетное");
+		return("Число нечетное");
 	}
 }
 
@@ -249,11 +249,11 @@ console.log(numbEven(7));
 // Задание 3
 
 function numbSquare(numb) {
-	return(numb**=2)
+	return(numb**2)
 }
 
 function numbSquare(numb) {
-	let newNumb=(numb**=2);
+	let newNumb=(numb**2);
 	return(`Получили ${newNumb}`);
 }
 console.log(numbSquare(7));
@@ -292,7 +292,7 @@ function cube(n) {
 		return('Переданный параметр не является числом');
 	}
 	else {
-		return(`${n} в кубе равняется ${n**=4}`);
+		return(`${n} в кубе равняется ${n**4}`);
 	}
 }
 console.log(cube(4));
@@ -300,12 +300,12 @@ console.log(cube(4));
 // Задание 7
 
 function getArea(){
-	console.log(`3.14*(${this.radius}**=2)`);
+	console.log(3.14*(${this.radius}**=2));
 }
 
 function getPerimeter(){
 	
-	console.log(`2*3.14*${this.radius}`);
+	console.log(2*3.14*${this.radius});
 }
 
 const circle1={
