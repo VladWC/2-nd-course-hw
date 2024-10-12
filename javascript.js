@@ -300,7 +300,7 @@ console.log(cube(4));
 // Задание 7
 
 function getArea(){
-	console.log(3.14*(${this.radius}**=2));
+	console.log(3.14*(${this.radius}**2));
 }
 
 function getPerimeter(){
