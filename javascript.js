@@ -284,6 +284,7 @@ function numbers(c, d){
 	}
 }
 console.log(numbers(5, 6));
+console.log(numbers('d', 'h'));
 
 // Задание 6
 
@@ -300,12 +301,12 @@ console.log(cube(4));
 // Задание 7
 
 function getArea(){
-	console.log(3.14*(${this.radius}**2));
+	console.log(3.14*(this.radius**2));
 }
 
 function getPerimeter(){
 	
-	console.log(2*3.14*${this.radius});
+	console.log(2*3.14*this.radius);
 }
 
 const circle1={

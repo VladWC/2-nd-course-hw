@@ -83,15 +83,16 @@ body {
 .main__conteiner {
   display: flex;
   flex-wrap: wrap;
+  gap: 32px;
 }
 .main__conteiner-item {
   max-width: 378px;
-  height: 505px;
+  height: 535px;
   background-color: white;
   border-radius: 30px;
 }
 .main__conteiner-item:hover {
-  height: 518px;
+  height: 545px;
   transition: 0.8s;
 }
 .main__conteiner-box {
