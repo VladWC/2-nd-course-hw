@@ -6,6 +6,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 let numb = getRandomIntInclusive(0, 100);
+function gusseNumb(){
 while (i = numb) {
     let userAnswer = prompt('Попробуй угадать число!');
     if (i == userAnswer && i == numb) {
@@ -18,5 +19,5 @@ while (i = numb) {
     if (i < userAnswer) {
         alert('Загаданное число меньше');
     }
-
+}
 }
