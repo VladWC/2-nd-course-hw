@@ -24,20 +24,19 @@ while (i = numb) {
 
 // Game:«Простая арифметика»
 
-let getRandomA=getRandomIntInclusive(0, 10);
-let getRandomB=getRandomIntInclusive(0, 10);
+let getRandomA=getRandomIntInclusive(0, 100);
+let getRandomB=getRandomIntInclusive(0, 100);
+const matSigns=['+','-','*','/'];
 function genSigns() {
-    return Math.floor(Math.random() * (matSigns.length));
+    return Math.floor(Math.random()*(matSigns.length));
 }
-let matSigns=genSigns(['+','-','*','/']);
-let example=[getRandomA,matSigns,getRandomB]
 function simpleArifmetic() {
-    return result=example.join();
-    let userSolution = prompt('Подсчитай ответ');
-    if(userSolution===result){
-        console.log('tru');
-    }
-    else{
-        console.log('folse');
-    }
-}    
+    let task = `${getRandomA}'${genSigns()}'${getRandomB}`;
+    console.log(task);
+    let answer = prompt('Введите ответ на задачу:');
+    if (answer === isNaN(task)) {
+        console.log('Ответ верный!');
+      } else {
+        console.log(`Ответ неверный! Правильный ответ: ${task}`);
+      }
+} 
