@@ -27,13 +27,16 @@ while (i = numb) {
 let getRandomA=getRandomIntInclusive(0, 100);
 let getRandomB=getRandomIntInclusive(0, 100);
 const matSigns=['+','-','*','/'];
+let genSignsResult=genSigns();
 function genSigns() {
     return Math.floor(Math.random()*(matSigns.length));
 }
+// console.log(matSigns[genSignsResult]);
 function simpleArifmetic() {
-    let task = `${getRandomA}'${genSigns()}'${getRandomB}`;
+    let taskString = [`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`];
+    let task= parseInt(`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`);
     console.log(task);
-    let answer = prompt('Введите ответ на задачу:');
+    let answer = prompt(`Введите ответ на задачу: ${taskString.join()}`);
     if (answer === isNaN(task)) {
         console.log('Ответ верный!');
       } else {
