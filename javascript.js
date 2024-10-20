@@ -389,6 +389,7 @@ function guesN() {
 while(true)	
  if(guessNumb.includes(userAnsw)){
 	console.log('Угадал');
+	break;
  }
  else{
 	console.log('Не угадал');

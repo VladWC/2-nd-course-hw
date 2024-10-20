@@ -7,17 +7,24 @@ function getRandomIntInclusive(min, max) {
 
 let numb = getRandomIntInclusive(0, 100);
 function gusseNumb(){
-while (i = numb) {
+while (true) {
     let userAnswer = prompt('Попробуй угадать число!');
-    if (i == userAnswer && i == numb) {
-        alert('Ура, угадал!!!');
+    console.log(userAnswer);
+    if (userAnswer<0 || userAnswer>100 || isNaN(userAnswer)) {
+        alert('Это ерунда!');
+    }
+    else if(userAnswer===null){
         break;
     }
-    if (i > userAnswer) {
+    else if (numb > userAnswer) {
         alert('Загаданое число больше!');
     }
-    if (i < userAnswer) {
+    else if (numb < userAnswer) {
         alert('Загаданное число меньше');
+    }
+    else {
+        alert('Ура, угадал!!!');
+        break;
     }
 }
 }
@@ -34,12 +41,12 @@ function genSigns() {
 // console.log(matSigns[genSignsResult]);
 function simpleArifmetic() {
     let taskString = [`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`];
-    let task= parseInt(`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`);
+    let task= eval(`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`);
     console.log(task);
-    let answer = prompt(`Введите ответ на задачу: ${taskString.join()}`);
-    if (answer === isNaN(task)) {
-        console.log('Ответ верный!');
+    let answer = +prompt(`Введите ответ на задачу: ${taskString.join()}`);
+    if (answer === task) {
+        alert('Ответ верный!');
       } else {
-        console.log(`Ответ неверный! Правильный ответ: ${task}`);
+        alert(`Ответ неверный! Правильный ответ: ${task}`);
       }
 } 
