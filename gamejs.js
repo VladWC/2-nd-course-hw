@@ -30,23 +30,31 @@ while (true) {
 }
 
 // Game:«Простая арифметика»
-
-let getRandomA=getRandomIntInclusive(0, 100);
-let getRandomB=getRandomIntInclusive(0, 100);
-const matSigns=['+','-','*','/'];
-let genSignsResult=genSigns();
-function genSigns() {
-    return Math.floor(Math.random()*(matSigns.length));
-}
-// console.log(matSigns[genSignsResult]);
 function simpleArifmetic() {
+    let getRandomA=getRandomIntInclusive(0, 100);
+    let getRandomB=getRandomIntInclusive(0, 100);
+    const matSigns=['+','-','*','/'];
+    let genSignsResult=genSigns();
+console.log(matSigns[genSignsResult]);
+    function genSigns() {
+        return Math.ceil(Math.random()*(matSigns.length));
+    }
+    while(true) { 
     let taskString = [`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`];
-    let task= eval(`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`);
+    let task= Math.floor(eval(`${getRandomA} ${matSigns[genSignsResult]} ${getRandomB}`));
+    // console.log(taskString);
+    // console.log(taskString = [`${getRandomA} / ${getRandomB}!!!`]);
     console.log(task);
     let answer = +prompt(`Введите ответ на задачу: ${taskString.join()}`);
     if (answer === task) {
         alert('Ответ верный!');
-      } else {
+        break;
+      } 
+      else if(taskString = [`'${getRandomA} / ${getRandomB}'`]) {
+        alert('Ответ округлить до целого!');
+      } 
+      else  {
         alert(`Ответ неверный! Правильный ответ: ${task}`);
       }
+    }
 } 
