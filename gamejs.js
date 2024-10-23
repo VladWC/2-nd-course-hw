@@ -30,6 +30,7 @@ while (true) {
 }
 
 // Game:«Простая арифметика»
+
 function simpleArifmetic() {
     let getRandomA=getRandomIntInclusive(0, 100);
     let getRandomB=getRandomIntInclusive(0, 100);
@@ -50,7 +51,7 @@ console.log(matSigns[genSignsResult]);
         alert('Ответ верный!');
         break;
       } 
-      else if(taskString = [`'${getRandomA} / ${getRandomB}'`]) {
+      else if(matSigns[genSignsResult]==='/') {
         alert('Ответ округлить до целого!');
       } 
       else  {
