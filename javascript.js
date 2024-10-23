@@ -467,3 +467,65 @@ for(let i=0;i<6;i++) {
 console.log(genMas)
 console.log(genMas.reduce((a, b)=> a+b)/genMas.length);
 
+
+// hw-2.7
+// Задание 1
+const c='js';
+function exercise1() {
+let capsC=c.toUpperCase();
+return capsC;
+}
+console.log(exercise1(c));
+
+// Задание 2
+
+
+
+// Задание 3
+
+let fractionNumb=32.58884;
+
+console.log(Math.ceil(fractionNumb));
+console.log(Math.floor(fractionNumb));
+console.log(Math.round(fractionNumb));
+
+// Задание 4
+
+const masNumbMinMax=[52,53,49,77,21,32];
+
+let minNumb = Math.min(...masNumbMinMax); 
+let maxNumb = Math.max(...masNumbMinMax);
+
+console.log(minNumb);
+console.log(maxNumb);
+
+// Задание 5
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(getRandomIntInclusive(1, 10));
+
+// Задание 6
+
+// Задание 7
+let minExer7=Number(prompt('Введите любое число'));
+let maxExer7=Number(prompt('Введите число больше предидущего'));
+function exercise7(minExer7, maxExer7) {
+    minExer7 = Math.ceil(minExer7);
+    maxExer7 = Math.floor(maxExer7);
+    return Math.floor(Math.random() * (maxExer7 - minExer7 + 1) + minExer7);
+}
+console.log(exercise7(minExer7, maxExer7));
+
+// Задание 8
+
+let dateToday=Date();
+console.log(dateToday);
+
+// Задание 9
+
+// Задание 10
+
