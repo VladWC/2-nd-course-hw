@@ -222,107 +222,248 @@
 // hw-2.5
 // Задание 1
 
-function min(a, b) {
-	if (a < b) {
-		return a;
-} 
-    else {
-	return b;
-	}
-}
-console.log(min(8, 4));
-console.log(min(6, 6));
+// function min(a, b) {
+// 	if (a < b) {
+// 		return a;
+// } 
+//     else {
+// 	return b;
+// 	}
+// }
+// console.log(min(8, 4));
+// console.log(min(6, 6));
 
 // Задание 2
  
-function numbEven(numb) {
-	if(numb%2===0){
-		return("Число четное");
-}
-    else{
-		return("Число нечетное");
-	}
-}
+// function numbEven(numb) {
+// 	if(numb%2===0){
+// 		return("Число четное");
+// }
+//     else{
+// 		return("Число нечетное");
+// 	}
+// }
 
-console.log(numbEven(7));
+// console.log(numbEven(7));
 
 // Задание 3
 
-function numbSquare(numb) {
-	return(numb**2)
-}
+// function numbSquare(numb) {
+// 	return(numb**2)
+// }
 
-function numbSquare(numb) {
-	let newNumb=(numb**2);
-	return(`Получили ${newNumb}`);
-}
-console.log(numbSquare(7));
+// function numbSquare(numb) {
+// 	let newNumb=(numb**2);
+// 	return(`Получили ${newNumb}`);
+// }
+// console.log(numbSquare(7));
 
 // Задание 4
 
-function ageFunc(age) {
-	if(age<=0){
-		return('Вы ввели неправильное значение');
-	}
-	else if(age>0 || age<13) {
-		return('Привет, друг!');
-	}
-	else if(age>13) {
-		return('Добро пожаловать!');
-	}
-}
-console.log(ageFunc(age=prompt("Сколько Вам лет?")));
+// function ageFunc(age) {
+// 	if(age<=0){
+// 		return('Вы ввели неправильное значение');
+// 	}
+// 	else if(age>0 || age<13) {
+// 		return('Привет, друг!');
+// 	}
+// 	else if(age>13) {
+// 		return('Добро пожаловать!');
+// 	}
+// }
+// console.log(ageFunc(age=prompt("Сколько Вам лет?")));
 
 // Задание 5
 
-function numbers(c, d){
-    if(isNaN(c, d)) {
-		return('Одно или оба значения не являются числом');
-	}
-	else {
-		return(c+d)
-	}
-}
-console.log(numbers(5, 6));
-console.log(numbers('d', 'h'));
+// function numbers(c, d){
+//     if(isNaN(c) || isNaN(d)) {
+// 		return('Одно или оба значения не являются числом');
+// 	}
+// 	else {
+// 		return(c+d)
+// 	}
+// }
+// console.log(numbers(5, 6));
+// console.log(numbers('d', 'h'));
+// console.log(numbers(5, 'h'));
+
+
 
 // Задание 6
 
-function cube(n) {
-	if(isNaN(n)){
-		return('Переданный параметр не является числом');
-	}
-	else {
-		return(`${n} в кубе равняется ${n**4}`);
-	}
-}
-console.log(cube(4));
+// function cube(n) {
+// 	if(isNaN(n)){
+// 		return('Переданный параметр не является числом');
+// 	}
+// 	else {
+// 		return(`${n} в кубе равняется ${n**4}`);
+// 	}
+// }
+// console.log(cube(4));
 
 // Задание 7
 
-function getArea(){
-	console.log(3.14*(this.radius**2));
-}
+// function getArea(){
+// 	console.log(3.14*(this.radius**2));
+// }
 
-function getPerimeter(){
+// function getPerimeter(){
 	
-	console.log(2*3.14*this.radius);
+// 	console.log(2*3.14*this.radius);
+// }
+
+// const circle1={
+// 	radius: 4,
+// 	getArea: getArea,
+// 	getPerimeter: getPerimeter,
+// }
+// const circle2={
+// 	radius: 8,
+// 	getArea: getArea,
+// 	getPerimeter: getPerimeter,
+// }
+
+// circle1.getArea();
+// circle1.getPerimeter();
+
+// circle2.getArea();
+// circle2.getPerimeter();
+
+// hw-2.6
+// Задание 1
+
+let numbs=[1, 5, 4, 10, 0, 3]
+for (let i=0; i<numbs.length; i++) {
+	console.log(numbs[i]);
+	if(numbs[i]===10){
+		break;
+	}
 }
 
-const circle1={
-	radius: 4,
-	getArea: getArea,
-	getPerimeter: getPerimeter,
-}
-const circle2={
-	radius: 8,
-	getArea: getArea,
-	getPerimeter: getPerimeter,
+// Задание 2
+
+const masNum=[1, 5, 4, 10, 0, 3]
+for(let c=0; c<masNum.length; c++) {
+	if(masNum[c]==4){
+		console.log('Ура 4!')
+	}
 }
 
-circle1.getArea();
-circle1.getPerimeter();
+// Задание 3
 
-circle2.getArea();
-circle2.getPerimeter();
+let numbMas=[1, 3, 5, 10, 20]
+console.log(numbMas.join(' '))
+
+// Задание 4
+
+let tree=[]   
+
+for(let k=1; k<=3;k++) {
+	let one=[];
+	for(let k=1; k<=3;k++) {
+		one.push(1);
+	}
+	tree.push(one);
+}
+console.log(tree)
+
+// Задание 5
+
+let mus=[1, 1, 1]
+mus.push(2, 2, 2)
+console.log(mus)
+
+// Задание 6
+
+let filt=[9, 8, 7, 'a', 6, 5]
+filt.sort()
+// console.log(filt)
+let newFilt=filt.pop()
+console.log(filt)
+
+// Задание 7
+
+const guessNumb=[9, 8, 7, 6, 5]
+function guesN() {
+	let userAnsw=Number(prompt('Угадай число'));
+while(true)	
+ if(guessNumb.includes(userAnsw)){
+	console.log('Угадал');
+	break;
+ }
+ else{
+	console.log('Не угадал');
+ }
+}
+
+// Задание 8
+
+let letters='abcdef'
+let newLetters=letters.split('').reverse().join('');
+console.log(newLetters)
+
+// Задание 9
+
+let masTwo=[[1, 2, 3],[4, 5, 6]]
+let masOne=masTwo.flat();
+console.log(masOne)
+
+// Задание 10
+
+const numbSum=[1,2,3,4,5,6,7,8,9,10]
+for(let i=0;i<numbSum.length;i++) {
+	if(numbSum[i+1]) {
+	console.log(numbSum[i] + numbSum[i+1]);
+	}
+}
+
+// Задание 11
+
+function square(test) {
+	return test.map(item=> item**2);
+}
+console.log(square([1, 3, 5, 7, 9]));
+
+// Задание 12
+
+function nowLenght(arr) {
+	return arr.map(item=> item.length);
+}
+console.log(nowLenght(['Создайте','функцию','которая','принимает']));
+
+// Задание 13
+
+function nowMinus(plusNumb) {
+	return plusNumb.filter(item=> item<0);
+}
+console.log(nowMinus([1, -4, 5, -8, 9, -5, 7, -6]));
+// Задание 14
+
+function randomNumb() {
+       return Math.floor(Math.random()*10);
+}
+const randomMas=[]
+for(let i=0;i<10;i++) {
+	randomMas.push(randomNumb());
+}
+const eveneNumb=[]
+for(let i=0;i<randomMas.length;i++) {
+	if(randomMas[i]%2===0){
+	eveneNumb.push(randomMas[i]);
+	}
+}
+console.log(randomMas);
+console.log(eveneNumb);
+
+// Задание 15
+
+function getRandom() {
+	return Math.floor(Math.random()*10);
+}
+const genMas=[]
+for(let i=0;i<6;i++) {
+	genMas.push(getRandom());
+}
+console.log(genMas)
+console.log(genMas.reduce((a, b)=> a+b)/genMas.length);
 
