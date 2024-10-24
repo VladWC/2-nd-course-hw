@@ -74,7 +74,7 @@ const quiz = [
     {
         question: "Какой цвет неба?",
         options: ["1. Красный", "2. Синий", "3. Зеленый"],
-        correctAnswer: 2 // номер правильного ответа
+        correctAnswer: 2 
     },
     {
         question: "Сколько дней в неделе?",
@@ -88,20 +88,31 @@ const quiz = [
     }
 ];
 
-let rightAnswer = 0;
-
 function guizGame() {
+    let rightAnswer = [];
     for (let i = 0; i < quiz.length; i++) {
         const { question, options, correctAnswer } = quiz[i];   
-        const userAnswer = prompt(question);
-        if (userAnswer === options[correctAnswer]) {
-            count++;
+        const userAnswer = Number(prompt(question, options));
+        if (userAnswer === correctAnswer) {
+            rightAnswer.push(+1);
+
+        }
+        else {
+            rightAnswer.push(0);
         }
     }
-    
-    // Вывод результата
-    alert(`Вы ответили правильно ${rightAnswer} раз.`);
-
+    // return rightAnswer; 
+    alert(arraySum(rightAnswer));
 }
+function arraySum(rightAnswer){
+let sumRightAnswer = 0;
+for(let i = 0; i < rightAnswer.length; i++){
+    sumRightAnswer += rightAnswer[i];
+    }
+    // return sumRightAnswer;
+    alert(`Правильных ответов:${sumRightAnswer}.`);
+}
+
+
 
 
