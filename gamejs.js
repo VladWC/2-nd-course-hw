@@ -32,8 +32,8 @@ while (true) {
 // Game:«Простая арифметика»
 
 function simpleArifmetic() {
-    let getRandomA=getRandomIntInclusive(0, 100);
-    let getRandomB=getRandomIntInclusive(0, 100);
+    let getRandomA=getRandomIntInclusive(0, 20);
+    let getRandomB=getRandomIntInclusive(0, 20);
     const matSigns=['+','-','*','/'];
     let genSignsResult=genSigns();
 console.log(matSigns[genSignsResult]);
@@ -88,7 +88,19 @@ const quiz = [
     }
 ];
 
+let rightAnswer = 0;
+
 function guizGame() {
+    for (let i = 0; i < quiz.length; i++) {
+        const { question, options, correctAnswer } = quiz[i];   
+        const userAnswer = prompt(question);
+        if (userAnswer === options[correctAnswer]) {
+            count++;
+        }
+    }
+    
+    // Вывод результата
+    alert(`Вы ответили правильно ${rightAnswer} раз.`);
 
 }
 
