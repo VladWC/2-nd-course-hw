@@ -483,7 +483,7 @@ function filterArray(array, string) {
 	array = array.map(item => item.toLowerCase());
 	let result = [];
 	for (let i = 0; i < array.length; i++) {
-	  if (array[i].startsWith(string)) {
+	  if (array[i].toLowerCase().startsWith(string)) {
 		result.push(array[i]);
 	  }
 	}

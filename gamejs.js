@@ -63,7 +63,7 @@ console.log(matSigns[genSignsResult]);
 // Game:«Переверни текст»
 
 function refersText() {
-    let userText = String(prompt("Введите любое слово"));
+    let userText = prompt("Введите любое слово");
     let textRevers = userText.split('').reverse().join('');
     alert(textRevers);
 }
@@ -91,7 +91,7 @@ const quiz = [
 function guizGame() {
     let rightAnswer = [];
     for (let i = 0; i < quiz.length; i++) {
-        const { question, options, correctAnswer } = quiz[i];   
+        const {question, options, correctAnswer} = quiz[i];   
         const userAnswer = Number(prompt(question, options));
         if (userAnswer === correctAnswer) {
             rightAnswer.push(+1);
