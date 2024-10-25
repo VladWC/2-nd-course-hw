@@ -113,6 +113,10 @@ for(let i = 0; i < rightAnswer.length; i++){
     alert(`Правильных ответов:${sumRightAnswer}.`);
 }
 
+// Game:«Камень, ножницы, бумага»
+
+
+
 
 
 

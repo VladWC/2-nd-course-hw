@@ -332,253 +332,276 @@
 // hw-2.6
 // Задание 1
 
-let numbs=[1, 5, 4, 10, 0, 3]
-for (let i=0; i<numbs.length; i++) {
-	console.log(numbs[i]);
-	if(numbs[i]===10){
-		break;
-	}
-}
+// let numbs=[1, 5, 4, 10, 0, 3]
+// for (let i=0; i<numbs.length; i++) {
+// 	console.log(numbs[i]);
+// 	if(numbs[i]===10){
+// 		break;
+// 	}
+// }
 
 // Задание 2
 
-const masNum=[1, 5, 4, 10, 0, 3]
-for(let c=0; c<masNum.length; c++) {
-	if(masNum[c]==4){
-		console.log('Ура 4!')
-	}
-}
+// const masNum=[1, 5, 4, 10, 0, 3]
+// for(let c=0; c<masNum.length; c++) {
+// 	if(masNum[c]==4){
+// 		console.log('Ура 4!')
+// 	}
+// }
 
 // Задание 3
 
-let numbMas=[1, 3, 5, 10, 20]
-console.log(numbMas.join(' '))
+// let numbMas=[1, 3, 5, 10, 20]
+// console.log(numbMas.join(' '))
 
 // Задание 4
 
-let tree=[]   
+// let tree=[]   
 
-for(let k=1; k<=3;k++) {
-	let one=[];
-	for(let k=1; k<=3;k++) {
-		one.push(1);
-	}
-	tree.push(one);
-}
-console.log(tree)
+// for(let k=1; k<=3;k++) {
+// 	let one=[];
+// 	for(let k=1; k<=3;k++) {
+// 		one.push(1);
+// 	}
+// 	tree.push(one);
+// }
+// console.log(tree)
 
 // Задание 5
 
-let mus=[1, 1, 1]
-mus.push(2, 2, 2)
-console.log(mus)
+// let mus=[1, 1, 1]
+// mus.push(2, 2, 2)
+// console.log(mus)
 
 // Задание 6
 
-let filt=[9, 8, 7, 'a', 6, 5]
-filt.sort()
+// let filt=[9, 8, 7, 'a', 6, 5]
+// filt.sort()
 // console.log(filt)
-let newFilt=filt.pop()
-console.log(filt)
+// let newFilt=filt.pop()
+// console.log(filt)
 
 // Задание 7
 
-const guessNumb=[9, 8, 7, 6, 5]
-function guesN() {
-	let userAnsw=Number(prompt('Угадай число'));
-while(true)	
- if(guessNumb.includes(userAnsw)){
-	console.log('Угадал');
-	break;
- }
- else{
-	console.log('Не угадал');
- }
-}
+// const guessNumb=[9, 8, 7, 6, 5]
+// function guesN() {
+// 	let userAnsw=Number(prompt('Угадай число'));
+// while(true)	
+//  if(guessNumb.includes(userAnsw)){
+// 	console.log('Угадал');
+// 	break;
+//  }
+//  else{
+// 	console.log('Не угадал');
+//  }
+// }
 
 // Задание 8
 
-let letters='abcdef'
-let newLetters=letters.split('').reverse().join('');
-console.log(newLetters)
+// let letters='abcdef'
+// let newLetters=letters.split('').reverse().join('');
+// console.log(newLetters)
 
 // Задание 9
 
-let masTwo=[[1, 2, 3],[4, 5, 6]]
-let masOne=masTwo.flat();
-console.log(masOne)
+// let masTwo=[[1, 2, 3],[4, 5, 6]]
+// let masOne=masTwo.flat();
+// console.log(masOne)
 
 // Задание 10
 
-const numbSum=[1,2,3,4,5,6,7,8,9,10]
-for(let i=0;i<numbSum.length;i++) {
-	if(numbSum[i+1]) {
-	console.log(numbSum[i] + numbSum[i+1]);
-	}
-}
+// const numbSum=[1,2,3,4,5,6,7,8,9,10]
+// for(let i=0;i<numbSum.length;i++) {
+// 	if(numbSum[i+1]) {
+// 	console.log(numbSum[i] + numbSum[i+1]);
+// 	}
+// }
 
 // Задание 11
 
-function square(test) {
-	return test.map(item=> item**2);
-}
-console.log(square([1, 3, 5, 7, 9]));
+// function square(test) {
+// 	return test.map(item=> item**2);
+// }
+// console.log(square([1, 3, 5, 7, 9]));
 
 // Задание 12
 
-function nowLenght(arr) {
-	return arr.map(item=> item.length);
-}
-console.log(nowLenght(['Создайте','функцию','которая','принимает']));
+// function nowLenght(arr) {
+// 	return arr.map(item=> item.length);
+// }
+// console.log(nowLenght(['Создайте','функцию','которая','принимает']));
 
 // Задание 13
 
-function nowMinus(plusNumb) {
-	return plusNumb.filter(item=> item<0);
-}
-console.log(nowMinus([1, -4, 5, -8, 9, -5, 7, -6]));
+// function nowMinus(plusNumb) {
+// 	return plusNumb.filter(item=> item<0);
+// }
+// console.log(nowMinus([1, -4, 5, -8, 9, -5, 7, -6]));
+
 // Задание 14
 
-function randomNumb() {
-       return Math.floor(Math.random()*10);
-}
-const randomMas=[]
-for(let i=0;i<10;i++) {
-	randomMas.push(randomNumb());
-}
-const eveneNumb=[]
-for(let i=0;i<randomMas.length;i++) {
-	if(randomMas[i]%2===0){
-	eveneNumb.push(randomMas[i]);
-	}
-}
-console.log(randomMas);
-console.log(eveneNumb);
+// function randomNumb() {
+//        return Math.floor(Math.random()*10);
+// }
+// const randomMas=[]
+// for(let i=0;i<10;i++) {
+// 	randomMas.push(randomNumb());
+// }
+// const eveneNumb=[]
+// for(let i=0;i<randomMas.length;i++) {
+// 	if(randomMas[i]%2===0){
+// 	eveneNumb.push(randomMas[i]);
+// 	}
+// }
+// console.log(randomMas);
+// console.log(eveneNumb);
 
 // Задание 15
 
-function getRandom() {
-	return Math.floor(Math.random()*10);
-}
-const genMas=[]
-for(let i=0;i<6;i++) {
-	genMas.push(getRandom());
-}
-console.log(genMas)
-console.log(genMas.reduce((a, b)=> a+b)/genMas.length);
+// function getRandom() {
+// 	return Math.floor(Math.random()*10);
+// }
+// const genMas=[]
+// for(let i=0;i<6;i++) {
+// 	genMas.push(getRandom());
+// }
+// console.log(genMas)
+// console.log(genMas.reduce((a, b)=> a+b)/genMas.length);
 
 
 // hw-2.7
 // Задание 1
-const c='js';
-function exercise1() {
-let capsC=c.toUpperCase();
-return capsC;
-}
-console.log(exercise1(c));
+
+// const c='js';
+// function exercise1() {
+// let capsC=c.toUpperCase();
+// return capsC;
+// }
+// console.log(exercise1(c));
 
 // Задание 2
 
-function filterArray(array, string) {
-	array = array.map(item => item.toLowerCase());
-	let result = [];
-	for (let i = 0; i < array.length; i++) {
-	  if (array[i].toLowerCase().startsWith(string)) {
-		result.push(array[i]);
-	  }
-	}
-	return result;
-  }
-  let words = ["Вид", "Вопрос", "Время", "Взять", "Вдруг"];
-let searchString = "вр";
+// function filterArray(array, string) {
+// 	array = array.map(item => item.toLowerCase());
+// 	let result = [];
+// 	for (let i = 0; i < array.length; i++) {
+// 	  if (array[i].toLowerCase().startsWith(string)) {
+// 		result.push(array[i]);
+// 	  }
+// 	}
+// 	return result;
+//   }
+//   let words = ["Вид", "Вопрос", "Время", "Взять", "Вдруг"];
+// let searchString = "вр";
 
-let filteredWords = filterArray(words, searchString);
+// let filteredWords = filterArray(words, searchString);
 
-console.log(filteredWords);
+// console.log(filteredWords);
 
 // Задание 3
 
-let fractionNumb=32.58884;
+// let fractionNumb=32.58884;
 
-console.log(Math.ceil(fractionNumb));
-console.log(Math.floor(fractionNumb));
-console.log(Math.round(fractionNumb));
+// console.log(Math.ceil(fractionNumb));
+// console.log(Math.floor(fractionNumb));
+// console.log(Math.round(fractionNumb));
 
 // Задание 4
 
-const masNumbMinMax=[52,53,49,77,21,32];
+// const masNumbMinMax=[52,53,49,77,21,32];
 
-let minNumb = Math.min(...masNumbMinMax); 
-let maxNumb = Math.max(...masNumbMinMax);
+// let minNumb = Math.min(...masNumbMinMax); 
+// let maxNumb = Math.max(...masNumbMinMax);
 
-console.log(minNumb);
-console.log(maxNumb);
+// console.log(minNumb);
+// console.log(maxNumb);
 
 // Задание 5
 
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-console.log(getRandomIntInclusive(1, 10));
+// function getRandomIntInclusive(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+// console.log(getRandomIntInclusive(1, 10));
 
 // Задание 6
 
-function generateRandomArray(max) {
-	let array = [];
-	const arrayLength = Math.floor(max / 2);
-	for (let i = 0; i < arrayLength; i++) {
-	  const randomNumber = Math.random() * max;
-	  array.push(Math.floor(randomNumber));
-	}
-	return array;
-  }
-console.log(generateRandomArray(30));
+// function generateRandomArray(max) {
+// 	let array = [];
+// 	const arrayLength = Math.floor(max / 2);
+// 	for (let i = 0; i < arrayLength; i++) {
+// 	  const randomNumber = Math.random() * max;
+// 	  array.push(Math.floor(randomNumber));
+// 	}
+// 	return array;
+//   }
+// console.log(generateRandomArray(30));
 
 // Задание 7
-let minExer7=Number(prompt('Введите любое число'));
-let maxExer7=Number(prompt('Введите число больше предидущего'));
-function exercise7(minExer7, maxExer7) {
-    minExer7 = Math.ceil(minExer7);
-    maxExer7 = Math.floor(maxExer7);
-    return Math.floor(Math.random() * (maxExer7 - minExer7 + 1) + minExer7);
-}
-console.log(exercise7(minExer7, maxExer7));
+
+// let minExer7=Number(prompt('Введите любое число'));
+// let maxExer7=Number(prompt('Введите число больше предидущего'));
+// function exercise7(minExer7, maxExer7) {
+//     minExer7 = Math.ceil(minExer7);
+//     maxExer7 = Math.floor(maxExer7);
+//     return Math.floor(Math.random() * (maxExer7 - minExer7 + 1) + minExer7);
+// }
+// console.log(exercise7(minExer7, maxExer7));
 
 // Задание 8
 
-let dateToday=Date();
-console.log(dateToday);
+// let dateToday=Date();
+// console.log(dateToday);
 
 // Задание 9
 
-let dateNow=new Date();
-let dateAfter=new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate() + 73);
-console.log(dateAfter);
+// let dateNow=new Date();
+// let dateAfter=new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate() + 73);
+// console.log(dateAfter);
 
 // Задание 10
 
-function formatDate(date) {
-	let day = date.getDate();
-	let monthIndex = date.getMonth();
-	let year = date.getFullYear();
-	let hours = date.getHours();
-	let minutes = date.getMinutes();
-	let seconds = date.getSeconds();
+// function formatDate(date) {
+// 	let day = date.getDate();
+// 	let monthIndex = date.getMonth();
+// 	let year = date.getFullYear();
+// 	let hours = date.getHours();
+// 	let minutes = date.getMinutes();
+// 	let seconds = date.getSeconds();
   
-	const months = [
-	  "января", "февраля", "марта",
-	  "апреля", "мая", "июня",
-	  "июля", "августа", "сентября",
-	  "октября", "ноября", "декабря"
-	];
-	let month = months[monthIndex];
+// 	const months = [
+// 	  "января", "февраля", "марта",
+// 	  "апреля", "мая", "июня",
+// 	  "июля", "августа", "сентября",
+// 	  "октября", "ноября", "декабря"
+// 	];
+// 	let month = months[monthIndex];
   
-	let weekday = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"][date.getDay()];
+// 	let weekday = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"][date.getDay()];
   
-	return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${hours}:${minutes}:${seconds}`;
-  }
+// 	return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${hours}:${minutes}:${seconds}`;
+//   }
   
-  let now = new Date();
-  console.log(formatDate(now));
+//   let now = new Date();
+//   console.log(formatDate(now));
+
+  // hw-2.8
+// Задание 1
+
+const people = [
+	{ name: 'Глеб', age: 29 },
+	{ name: 'Анна', age: 17 },
+	{ name: 'Олег', age: 7 },
+	{ name: 'Оксана', age: 47 }
+ ];
+ 
+ console.log(people.sort((a, b) => a.age - b.age));
+
+// Задание 2
+
+// Задание 3
+
+// Задание 4
+
+// Задание 5
