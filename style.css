@@ -92,7 +92,7 @@ body {
   border-radius: 30px;
 }
 .main__conteiner-item:hover {
-  height: 545px;
+  transform: scale(1.1);
   transition: 0.8s;
 }
 .main__conteiner-box {
@@ -147,6 +147,7 @@ body {
   width: 82px;
   line-height: 17.5px;
   font-size: 16px;
+  font-weight: 500;
   color: #202027;
 }
 .game-name {

@@ -467,3 +467,118 @@ for(let i=0;i<6;i++) {
 console.log(genMas)
 console.log(genMas.reduce((a, b)=> a+b)/genMas.length);
 
+
+// hw-2.7
+// Задание 1
+const c='js';
+function exercise1() {
+let capsC=c.toUpperCase();
+return capsC;
+}
+console.log(exercise1(c));
+
+// Задание 2
+
+function filterArray(array, string) {
+	array = array.map(item => item.toLowerCase());
+	let result = [];
+	for (let i = 0; i < array.length; i++) {
+	  if (array[i].toLowerCase().startsWith(string)) {
+		result.push(array[i]);
+	  }
+	}
+	return result;
+  }
+  let words = ["Вид", "Вопрос", "Время", "Взять", "Вдруг"];
+let searchString = "вр";
+
+let filteredWords = filterArray(words, searchString);
+
+console.log(filteredWords);
+
+// Задание 3
+
+let fractionNumb=32.58884;
+
+console.log(Math.ceil(fractionNumb));
+console.log(Math.floor(fractionNumb));
+console.log(Math.round(fractionNumb));
+
+// Задание 4
+
+const masNumbMinMax=[52,53,49,77,21,32];
+
+let minNumb = Math.min(...masNumbMinMax); 
+let maxNumb = Math.max(...masNumbMinMax);
+
+console.log(minNumb);
+console.log(maxNumb);
+
+// Задание 5
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(getRandomIntInclusive(1, 10));
+
+// Задание 6
+
+function generateRandomArray(max) {
+	let array = [];
+	const arrayLength = Math.floor(max / 2);
+	for (let i = 0; i < arrayLength; i++) {
+	  const randomNumber = Math.random() * max;
+	  array.push(Math.floor(randomNumber));
+	}
+	return array;
+  }
+console.log(generateRandomArray(30));
+
+// Задание 7
+let minExer7=Number(prompt('Введите любое число'));
+let maxExer7=Number(prompt('Введите число больше предидущего'));
+function exercise7(minExer7, maxExer7) {
+    minExer7 = Math.ceil(minExer7);
+    maxExer7 = Math.floor(maxExer7);
+    return Math.floor(Math.random() * (maxExer7 - minExer7 + 1) + minExer7);
+}
+console.log(exercise7(minExer7, maxExer7));
+
+// Задание 8
+
+let dateToday=Date();
+console.log(dateToday);
+
+// Задание 9
+
+let dateNow=new Date();
+let dateAfter=new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate() + 73);
+console.log(dateAfter);
+
+// Задание 10
+
+function formatDate(date) {
+	let day = date.getDate();
+	let monthIndex = date.getMonth();
+	let year = date.getFullYear();
+	let hours = date.getHours();
+	let minutes = date.getMinutes();
+	let seconds = date.getSeconds();
+  
+	const months = [
+	  "января", "февраля", "марта",
+	  "апреля", "мая", "июня",
+	  "июля", "августа", "сентября",
+	  "октября", "ноября", "декабря"
+	];
+	let month = months[monthIndex];
+  
+	let weekday = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"][date.getDay()];
+  
+	return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${hours}:${minutes}:${seconds}`;
+  }
+  
+  let now = new Date();
+  console.log(formatDate(now));

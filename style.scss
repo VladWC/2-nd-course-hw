@@ -85,7 +85,7 @@ body {
         background-color: white;
         border-radius: 30px;
         &:hover{
-            height: 545px;
+            transform: scale(1.1);
             transition: 0.8s;
         }
     }
@@ -140,6 +140,7 @@ body {
     width: 82px;
     line-height: 17.5px;
     font-size: 16px;
+    font-weight: 500;
     color: #202027;
     &-name{
         padding-bottom: 36px;
