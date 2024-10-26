@@ -115,7 +115,27 @@ for(let i = 0; i < rightAnswer.length; i++){
 
 // Game:«Камень, ножницы, бумага»
 
+const stounScissorsPeper=["камень", "ножницы", "бумага"];
 
+function gameSSP() {
+    let stounScissorsPeperRandom=Math.floor(Math.random()*(stounScissorsPeper.length)+1);
+    let userAnswerSSP=Number(prompt('Сделайте свой выбор:"камень", "ножницы", "бумага"!',"1.Камень 2.Ножницы 3.Бумага"));
+   if(stounScissorsPeperRandom===userAnswerSSP) {
+    alert('У нас ничья!');
+   }
+   else if(stounScissorsPeperRandom===1 && userAnswerSSP===3) {
+    alert('Ура, Вы, победили!');
+   }
+   else if(stounScissorsPeperRandom===2 && userAnswerSSP===1) {
+    alert('Ура, Вы, победили!');
+   }
+   else if(stounScissorsPeperRandom===3 && userAnswerSSP===2) {
+    alert('Ура, Вы, победили!');
+   }
+   else {
+    alert('К сожалению, вы проиграли! Попробуйте ещё!');
+   }
+}
 
 
 
