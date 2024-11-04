@@ -137,6 +137,16 @@ function gameSSP() {
    }
 }
 
+// Game:«Генератор случайных цветов»
+
+const mainEL=document.querySelector('.main');
+const gameGenRandomColorButtonEL=document.querySelector('.gameGenRandomColorButton');
+
+gameGenRandomColorButtonEL.addEventListener('click',() =>{
+    let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+   mainEL.style.backgroundColor = randomColor;
+})
+
 
 
 
