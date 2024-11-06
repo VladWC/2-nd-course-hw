@@ -59,6 +59,24 @@ body {
   color: white;
 }
 
+.lineprokrutka {
+  height: 40px;
+  background-color: #BCEC30;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.lineprokrutka__img {
+  animation: scroll-left 18s linear infinite;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .main {
   padding-top: 94px;
   padding-bottom: 144px;
