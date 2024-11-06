@@ -60,6 +60,7 @@ body {
 }
 
 .lineprokrutka {
+  width: 100%;
   height: 40px;
   background-color: #BCEC30;
   padding-top: 4px;
