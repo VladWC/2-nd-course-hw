@@ -49,21 +49,19 @@ console.log(matSigns[genSignsResult]);
     if (matSigns[genSignsResult]==='/'){
         alert('Ответ округлить до целого!')
     }
-    else{
-        
+    let answer =prompt(`Введите ответ на задачу: ${taskString.join()}`);
+    if (answer === null) {
+        return;
     }
-    let answer =Math.floor(+prompt(`Введите ответ на задачу: ${taskString.join()}`));
+    answer= Math.floor(Number(answer));
     if (answer === task) {
         alert('Ответ верный!');
         break;
       } 
-      else if(answer==null){
-        break;
-    }
-      else if(matSigns[genSignsResult]==='/' && answer != task) {
+    else if(matSigns[genSignsResult]==='/' && answer != task) {
         alert(`Ответ округлить до целого! Ответ неверный! Правильный ответ: ${task}`);
       } 
-      else  {
+    else  {
         alert(`Ответ неверный! Правильный ответ: ${task}`);
       }
     }
