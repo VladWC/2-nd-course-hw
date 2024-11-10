@@ -12,7 +12,7 @@
 <body>
     <header class="header center">
       <div class="header__box">
-        <h1 class="header__box-heading">Добро пожаловать на мой сайт мини-игр</h1>
+        <h1 class="header__box-heading">Добро пожаловать <span><br></span> на мой сайт мини-игр</h1>
         <p class="header__box-textdescription">Тебе предстоит пройти несколько увлекательных игр. <span><br></span>  Если готов, нажимай <span class="header__box-textdescriptionstyle">«Поехали!»</span> и <span class="header__box-textdescriptionstyle">приступай</span>.</p>
         <button id="clickGO" class="header__box-button header__box-buttontext">Поехали!</button>
       </div>
@@ -28,42 +28,42 @@
                 Все игры доступны для пользования.</p>
             <div class="main__conteiner">
                 <div id="clickGN" class="main__conteiner-item">
-                    <img src="./img/угадай число.svg" alt="img угадай число">
+                    <img src="./img/угадайчисло.svg" alt="img угадай число">
                     <div class="main__conteiner-box">
                         <h4 class="game">Игра № 1</h4>
                         <h3 class="game-name">Угадай число</h3>
                     </div>
                 </div>
                 <div id="clickSA" class="main__conteiner-item">
-                    <img src="./img/ease arifmetick.svg" alt="img простая арифметика">
+                    <img src="./img/easearifmetick.svg" alt="img простая арифметика">
                      <div class="main__conteiner-box">
                         <h4 class="game">Игра № 2</h4>
                         <h3 class="game-name">Простая арифметика</h3>
                     </div>
                 </div>
                 <div id="clickRT" class="main__conteiner-item">
-                    <img src="./img/переверни текст.svg" alt="img переверни текст">
+                    <img src="./img/перевернитекст.svg" alt="img переверни текст">
                     <div class="main__conteiner-box">   
                         <h4 class="game">Игра № 3</h4>
                         <h3 class="game-name">Переверни текст</h3>
                      </div>
                 </div>
                 <div id="clickSNP" class="main__conteiner-item">
-                    <img src="./img/камень, ножницы, бумага.svg" alt="img камень,ножницы,бумага">
+                    <img src="./img/камень,ножницы,бумага.svg" alt="img камень,ножницы,бумага">
                     <div class="main__conteiner-box">   
                         <h4 class="game">Игра № 4</h4>
                         <h3 class="game-name">Камень, ножницы, бумага</h3>
                      </div>
                 </div>
                 <div id="clickSV" class="main__conteiner-item">
-                    <img src="./img/простая викторина.svg" alt="img простая викторина">
+                    <img src="./img/простаявикторина.svg" alt="img простая викторина">
                     <div class="main__conteiner-box">   
                         <h4 class="game">Игра № 5</h4>
                         <h3 class="game-name">Простая викторина</h3>
                      </div>
                 </div>
                 <div id="clickGRC" class="main__conteiner-item">
-                    <img src="./img/генератор случайных цветов.svg" alt="img генератор случайных цветов">
+                    <img src="./img/генераторслучайныхцветов.svg" alt="img генератор случайных цветов">
                     <div class="main__conteiner-box">   
                         <h4 class="game">Игра № 6</h4>
                         <h3 class="game-name">Генератор случайных цветов</h3>
@@ -71,55 +71,55 @@
                 </div>
             </div>
         </section>
-        <section class="center">
-            <h2 class="minigame__heading">Мини-игры</h2>
+        <section class="center conteiner">
         <div class="conteiner__minigame">
+            <h2 class="conteiner__minigame-heading">Мини-игры</h2>
                     <div id="scrollGN" class="conteiner__minigame-box">
                         <div class="conteiner__minigame-boxtext order1">
-                            <h3 class="minigame-name">Угадай число</h3>
+                            <h3 class="conteiner__minigame-name">Угадай число</h3>
                             <p class="conteiner__minigame-textdescription">Попробуй угадать случайное число от 1 до 100.</p>
                             <button onclick="gusseNumb()" class="header__box-button header__box-buttontext">Играть!</button>
                         </div>
-                        <img class="mobile__img order2" src="./img/big угадай число.svg" alt="img угадай число">
+                        <img class="mobile__img order2" src="./img/bigугадайчисло.svg" alt="img угадай число">
                     </div>
                     <div id="scrollSA" class="conteiner__minigame-box">
-                        <img class="mobile__img order2" class="mobile__img" src="./img/big Простая  арифметика.svg" alt="img простая арифметика">
+                        <img class="mobile__img order2" src="./img/bigПростая арифметика.svg" alt="img простая арифметика">
                          <div class="conteiner__minigame-boxtext order1">
-                            <h3 class="minigame-name">Простая арифметика</h3>
+                            <h3 class="conteiner__minigame-name">Простая арифметика</h3>
                             <p class="conteiner__minigame-textdescription">Попробуй решить простые арифметические задачи.</p>
                             <button onclick="simpleArifmetic()" class="header__box-button header__box-buttontext">Играть!</button>
                         </div>
                     </div>
                     <div id="scrollRT" class="conteiner__minigame-box">
                         <div class="conteiner__minigame-boxtext order1">   
-                            <h3 class="minigame-name">Переверни текст</h3>
+                            <h3 class="conteiner__minigame-name">Переверни текст</h3>
                             <p class="conteiner__minigame-textdescription">Попробуй ввести текст, который будет перевернут.</p>
                             <form onclick="refersText()"><button class="header__box-button header__box-buttontext">Играть!</button></form>
                          </div>
-                         <img class="mobile__img order2" src="./img/big Переверни текст.svg" alt="img переверни текст">
+                         <img class="mobile__img order2" src="./img/bigПеревернитекст.svg" alt="img переверни текст">
                     </div>
                     <div id="scrollSV" class="conteiner__minigame-box">
-                        <img class="mobile__img order2" src="./img/big viktorina.svg" alt="img простая викторина">
+                        <img class="mobile__img order2" src="./img/bigviktorina.svg" alt="img простая викторина">
                         <div class="conteiner__minigame-boxtext order1">   
-                            <h3 class="minigame-name">Викторина</h3>
+                            <h3 class="conteiner__minigame-name">Викторина</h3>
                             <p class="conteiner__minigame-textdescription">Отвечай на вопросы викторины с вариантами ответов.</p>
-                            <form onclick="guizGame()"><button class="header__box-button header__box-buttontext">Играть!</button></form>
+                            <button onclick="guizGame()" class="header__box-button header__box-buttontext">Играть!</button>
                          </div>
                     </div>
                     <div id="scrollSNP" class="conteiner__minigame-box">
                         <div class="conteiner__minigame-boxtext order1">   
-                            <h3 class="minigame-name">Камень, ножницы, бумага</h3>
+                            <h3 class="conteiner__minigame-name">Камень, ножницы, бумага</h3>
                             <p class="conteiner__minigame-textdescription">Сыграй в популярную игру против компьютера.</p>
-                            <form onclick="gameSSP()"><button class="header__box-button header__box-buttontext">Играть!</button></form>
+                            <button onclick="gameSSP()" class="header__box-button header__box-buttontext">Играть!</button>
                          </div>
-                         <img class="mobile__img order2" src="./img/big Камень, ножницы, бумага.svg" alt="img камень,ножницы,бумага">
+                         <img class="mobile__img order2" src="./img/bigКамень,ножницы,бумага.jpeg" alt="img камень,ножницы,бумага">
                     </div>
                     <div id="scrollGRC" class="conteiner__minigame-box">
-                        <img class="mobile__img order2" src="./img/big Генератор случайных цветов.svg" alt="img генератор случайных цветов">
+                        <img class="mobile__img order2" src="./img/bigГенераторслучайныхцветов.svg" alt="img генератор случайных цветов">
                         <div class="conteiner__minigame-boxtext order1">   
-                            <h3 class="minigame-name">Генератор случайных цветов</h3>
+                            <h3 class="conteiner__minigame-name">Генератор случайных цветов</h3>
                             <p class="conteiner__minigame-textdescription">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                            <form><button class="header__box-button header__box-buttontext gameGenRandomColorButton">Играть!</button></form>
+                            <button class="header__box-button header__box-buttontext gameGenRandomColorButton">Играть!</button>
                          </div>
                     </div>
             </div>
@@ -128,7 +128,7 @@
     <footer class="footer center">
         <p class="footer__text">Все права защищены.</p>
     </footer>
-    <script src="./javascript.js" src="./gamejs.js"></script>
+    <script src="./javascript.js"></script>
     <script src="./gamejs.js"></script>
 </body>
 </html>

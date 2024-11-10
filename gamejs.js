@@ -46,11 +46,20 @@ console.log(matSigns[genSignsResult]);
     // console.log(taskString);
     // console.log(taskString = [`${getRandomA} / ${getRandomB}!!!`]);
     console.log(task);
+    if (matSigns[genSignsResult]==='/'){
+        alert('Ответ округлить до целого!')
+    }
+    else{
+        
+    }
     let answer =Math.floor(+prompt(`Введите ответ на задачу: ${taskString.join()}`));
     if (answer === task) {
         alert('Ответ верный!');
         break;
       } 
+      else if(answer==null){
+        break;
+    }
       else if(matSigns[genSignsResult]==='/' && answer != task) {
         alert(`Ответ округлить до целого! Ответ неверный! Правильный ответ: ${task}`);
       } 
