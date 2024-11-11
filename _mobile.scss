@@ -4,7 +4,7 @@
     padding-right: calc(50% - 171.5px);
    }
    .header{
-    background-image: url(./img/stars\ head.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
+    background-image: url(./img/starshead.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
     background-repeat: no-repeat;
     background-position: 5% 14%, calc(100% + 90px) -23%, 93% 97%;
    }
@@ -22,6 +22,9 @@
     &-textdescription{
         font-size: 16px;
         line-height: 19.5px; 
+    }
+    &-button{
+        width: 285px;
     }
    }
    .main{

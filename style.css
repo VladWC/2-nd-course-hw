@@ -61,12 +61,13 @@ body {
 
 .lineprokrutka {
   background-color: #BCEC30;
-  width: 100%;
-}
-.lineprokrutka__img {
-  width: 100%;
-  height: 55px;
-  animation: scroll-left 18s linear infinite;
+  background-image: url(./img/lineprokrutka.svg);
+  width: 6000%;
+  background-repeat: repeat-x;
+  background-position: 0% 50%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  animation: scroll-left 900s infinite;
 }
 @keyframes scroll-left {
   from {
@@ -196,7 +197,7 @@ body {
     padding-right: calc(50% - 171.5px);
   }
   .header {
-    background-image: url(./img/stars\ head.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
+    background-image: url(./img/starshead.svg), url(./img/bigstarmobile.svg), url(./img/star2mobil.svg);
     background-repeat: no-repeat;
     background-position: 5% 14%, calc(100% + 90px) -23%, 93% 97%;
   }
@@ -215,6 +216,9 @@ body {
   .header__box-textdescription {
     font-size: 16px;
     line-height: 19.5px;
+  }
+  .header__box-button {
+    width: 285px;
   }
   .main {
     background-image: none;
