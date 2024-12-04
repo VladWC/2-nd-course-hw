@@ -589,77 +589,77 @@
   // hw-2.8
 // Задание 1
 
-const people = [
-	{ name: 'Глеб', age: 29 },
-	{ name: 'Анна', age: 17 },
-	{ name: 'Олег', age: 7 },
-	{ name: 'Оксана', age: 47 }
- ];
+// const people = [
+// 	{ name: 'Глеб', age: 29 },
+// 	{ name: 'Анна', age: 17 },
+// 	{ name: 'Олег', age: 7 },
+// 	{ name: 'Оксана', age: 47 }
+//  ];
  
- console.log(people.sort((a, b) => a.age - b.age));
+//  console.log(people.sort((a, b) => a.age - b.age));
 
 // Задание 2
 
-function filter(arr, ruleFunction) {
-	const result = [];
-	for (let i = 0; i < arr.length; i++) {
-	  if (ruleFunction(arr[i])) {
-		result.push(arr[i]);
-	  }
-	}
-	return result;
-  }
+// function filter(arr, ruleFunction) {
+// 	const result = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 	  if (ruleFunction(arr[i])) {
+// 		result.push(arr[i]);
+// 	  }
+// 	}
+// 	return result;
+//   }
 
-function isPositive(num) {
-	return num > 0;
-  }
-  console.log(filter([3, -4, 1, 9], isPositive)); 
+// function isPositive(num) {
+// 	return num > 0;
+//   }
+//   console.log(filter([3, -4, 1, 9], isPositive)); 
 
 //   
 
-  function isMale(peopleExes2) {
-	return peopleExes2.gender === 'male';
-  }
+  // function isMale(peopleExes2) {
+	// return peopleExes2.gender === 'male';
+  // }
   
-  const peopleExes2 = [
-	{ name: 'Глеб', gender: 'male' },
-	{ name: 'Анна', gender: 'female' },
-	{ name: 'Олег', gender: 'male' },
-	{ name: 'Оксана', gender: 'female' }
-  ];
+  // const peopleExes2 = [
+	// { name: 'Глеб', gender: 'male' },
+	// { name: 'Анна', gender: 'female' },
+	// { name: 'Олег', gender: 'male' },
+	// { name: 'Оксана', gender: 'female' }
+  // ];
   
-  console.log(filter(peopleExes2, isMale));
+  // console.log(filter(peopleExes2, isMale));
 
 // Задание 3
 
-function dateNow() {
-	console.log(new Date());
-  }
-  let interval = setInterval(dateNow, 3000);
-  ;
-  setTimeout(() => {for (let i = 0; i < 10; i++) {dateNow();}clearInterval(interval);console.log("30 секунд прошло");}, 30000);
+// function dateNow() {
+// 	console.log(new Date());
+//   }
+//   let interval = setInterval(dateNow, 3000);
+//   ;
+//   setTimeout(() => {for (let i = 0; i < 10; i++) {dateNow();}clearInterval(interval);console.log("30 секунд прошло");}, 30000);
 
 // Задание 4
 
-function delayForSecond(callback) {
-	setTimeout(callback, 1000);
-}
+// function delayForSecond(callback) {
+// 	setTimeout(callback, 1000);
+// }
 
-delayForSecond(function () {
-   console.log('Привет, Ivan!');
-})
+// delayForSecond(function () {
+//    console.log('Привет, Ivan!');
+// })
 // Задание 5
 
-function delayForSecond(cb) {
-    setTimeout(() => {
-        console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+//         if(cb) {  cb(); }
+//     }, 1000)
+// }
 
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
 
-delayForSecond(()=> {sayHi("Глеб");});
+// delayForSecond(()=> {sayHi("Глеб");});
 

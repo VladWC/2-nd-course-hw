@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exesizetwo{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+<h2>Задание 1</h2>
+<h1 class="exesizeOne"></h1>
+<button class="buttonOne">Кнопка</button>
+    </section>
+    <section>
+    <h2>Задание 2</h2>
+ <p class="exesizetwo">Lorem ipsum dolor sit amet.</p>
+ <button class="buttontwo">Кнопка</button>
+    </section>
+    <section>
+    <h2>Задание 3</h2>  
+    <Lorem, class="exesizetree">Lorem, ipsum dolor.</h1>
+    <button class="buttontree">Изменить текст</button>
+    </section>
+    <section>
+     <h2>Задание 4   Задание 5</h2>  
+     <p class="description">Lorem, ipsum dolor.</p>
+     <p class="nodescription">Lorem, ipsum dolor.</p>
+     <p class="description">Lorem, ipsum dolor.</p>
+     <p class="nodescription">Lorem, ipsum dolor.</p>
+     <p class="description">Lorem, ipsum dolor.</p>
+     <p class="nodescription">Lorem, ipsum dolor.</p>
+     <p class="description">Lorem, ipsum dolor.</p>
+    </section>
+    <section>
+     <h2>Задание 6</h2>   
+         <div class="exesizeSixDiv"></div>
+         <button class="buttonSix">Добавить элемент</button>
+    </section>
+    <section>
+      <h2>Задание 7</h2>  
+      <p class="descriptionseven">1 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">2 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">3 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">4 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">5 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">6 Lorem, ipsum dolor.</p>
+      <p class="descriptionseven">7 Lorem, ipsum dolor.</p>
+      <button class="buttonseven">Удалить элемент</button>
+    </section>
+    <script>
+                 // Задание 1
+     const buttonOneEL=document.querySelector('.buttonOne');
+     const exesizeOneEL=document.querySelector('.exesizeOne');
+     
+     buttonOneEL.addEventListener('click', () =>{
+        exesizeOneEL.innerHTML = 'Lorem, ipsum dolor.';
+     }) 
+               //  Задание 2
+     const   exesizeTwoEL=document.querySelector('.exesizetwo'); 
+     const buttonTwoEL=document.querySelector('.buttontwo');
+
+     buttonTwoEL.addEventListener('click', () =>{
+        exesizeTwoEL.style.color = 'red';
+     })       
+                //  Задание 3
+    const exesizeTreeEL=document.querySelector('.exesizetree');
+    const buttonTreeEL=document.querySelector('.buttontree');
+          
+    buttonTreeEL.addEventListener('click', () =>{
+        exesizeTreeEL.textContent = 'Привет, мир!';
+     }) 
+                  //  Задание 4 Задание 5
+     const descriptionEL=document.querySelectorAll('.description')
+
+     descriptionEL.forEach((descriptionEL) => {
+        descriptionEL.textContent = 'Изменённый текст';
+     })
+                   //  Задание 6
+     const buttonSixEL=document.querySelector('.buttonSix');
+     const exesizeSixDivEL=document.querySelector('.exesizeSixDiv');
+     
+     buttonSixEL.addEventListener('click', () =>{
+        const exesizeSixEL=document.createElement('h1');
+        exesizeSixEL.textContent = 'Новый абзац';
+        exesizeSixDivEL.appendChild(exesizeSixEL);
+     })
+                   //  Задание 7
+     const buttonSevenEL=document.querySelector('.buttonseven');
+
+     buttonSevenEL.addEventListener('click',() => {
+        const descriptionSevenEL=document.querySelector('.descriptionseven');
+        descriptionSevenEL.remove();
+     })
+    </script>
+</body>
+</html>

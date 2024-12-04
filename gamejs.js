@@ -46,15 +46,22 @@ console.log(matSigns[genSignsResult]);
     // console.log(taskString);
     // console.log(taskString = [`${getRandomA} / ${getRandomB}!!!`]);
     console.log(task);
-    let answer =Math.floor(+prompt(`Введите ответ на задачу: ${taskString.join()}`));
+    if (matSigns[genSignsResult]==='/'){
+        alert('Ответ округлить до целого!')
+    }
+    let answer =prompt(`Введите ответ на задачу: ${taskString.join()}`);
+    if (answer === null) {
+        return;
+    }
+    answer= Math.floor(Number(answer));
     if (answer === task) {
         alert('Ответ верный!');
         break;
       } 
-      else if(matSigns[genSignsResult]==='/' && answer != task) {
+    else if(matSigns[genSignsResult]==='/' && answer != task) {
         alert(`Ответ округлить до целого! Ответ неверный! Правильный ответ: ${task}`);
       } 
-      else  {
+    else  {
         alert(`Ответ неверный! Правильный ответ: ${task}`);
       }
     }
@@ -95,21 +102,18 @@ function guizGame() {
         const userAnswer = Number(prompt(question, options));
         if (userAnswer === correctAnswer) {
             rightAnswer.push(+1);
-
         }
         else {
             rightAnswer.push(0);
         }
     }
-    // return rightAnswer; 
-    alert(arraySum(rightAnswer));
+    return arraySum(rightAnswer); 
 }
 function arraySum(rightAnswer){
 let sumRightAnswer = 0;
 for(let i = 0; i < rightAnswer.length; i++){
     sumRightAnswer += rightAnswer[i];
     }
-    // return sumRightAnswer;
     alert(`Правильных ответов:${sumRightAnswer}.`);
 }
 
@@ -137,6 +141,39 @@ function gameSSP() {
    }
 }
 
+// Game:«Генератор случайных цветов»
 
+const mainEL=document.querySelector('.main');
+const gameGenRandomColorButtonEL=document.querySelector('.gameGenRandomColorButton');
 
+gameGenRandomColorButtonEL.addEventListener('click',(e) =>{
+    e.preventDefault();
+    let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+   mainEL.style.backgroundColor = randomColor;
+   return false;
+})
+
+// SCROLL
+
+function scrollToEL(X, Y) {
+    let scrollButtonEL = document.getElementById(X);
+    scrollButtonEL.addEventListener("click",  () => {
+        let target = document.getElementById(Y);
+        window.scroll({
+            top: target.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+        });
+      });
+};
+
+window.onload = () => {
+    scrollToEL('clickGO', 'scrollGO');
+    scrollToEL('clickGN', 'scrollGN');
+    scrollToEL('clickSA', 'scrollSA');
+    scrollToEL('clickRT', 'scrollRT');
+    scrollToEL('clickSNP', 'scrollSNP');
+    scrollToEL('clickSV', 'scrollSV');
+    scrollToEL('clickGRC', 'scrollGRC');
+};
 
